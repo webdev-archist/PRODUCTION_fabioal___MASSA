@@ -1,0 +1,119 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+
+body{}
+body>.top{position:fixed;bottom:0;right:0;}
+body>.top>i{font-size: 3rem;opacity:.6;cursor:pointer;transition:opacity .4s;}
+body>.top>i:hover{opacity:1;}
+body>nav>.nav-link>span{visibility:hidden;}
+body>nav>.nav-link:hover>span{visibility: visible;}
+body>nav{
+    border-bottom:1px solid;
+    box-shadow: 0 0 5px 0.1px;
+}
+body>nav .navbar-nav .active{color:brown !important;}
+body>.jumbotron{
+    background:whitesmoke !important;
+    transition: background .4s;
+    width:80%;
+    margin:0 auto !important;
+    position: relative;
+    border: 1px solid;
+    border-top: none;
+    border-radius: 0 0 5px 5px !important;
+}
+body>.jumbotron:hover{
+    background:silver !important;
+}
+body>.jumbotron>a.more{float:left;}
+body>.jumbotron>h1>img{
+    float: revert;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 1px dotted;
+    font-size: 1rem;
+}
+body>.jumbotron>p:last-of-type{
+    width: 50%;
+    margin: 0 auto 3rem;
+}
+body>main{padding:0 2rem;}
+body>main>#photos{
+    padding: 1rem;
+    background: silver;
+    border-radius: 0 0 5px 5px;
+    width:300px;margin:0 auto 3rem;
+}
+body>main>section.cards{height:500px;}
+body>main>section.cards>.card{width:40%;}
+body>main>section.cards>.card .list-group{}
+body>main>section.cards>.card .tab-content{}
+body>main>section.cards>.card .tab-content .tab-pane{
+    opacity:1;
+    background: wheat;
+    text-align: center;
+    padding: .5em 0;
+    font-weight: bold;
+}
+body>main .card{height:100%;}
+.card.distribution{float:right}
+.technique{display: flex;justify-content:space-between;padding-top:3rem;position:relative;}
+.technique>h2{position:absolute;top:0;}
+.technique>p{width:30%;text-align: justify;}
+.technique>p>b{text-decoration:underline;}
+
+
+body>footer{
+    display:flex;justify-content: space-around;
+    padding: .5rem;
+    border-top: solid;
+    box-shadow: 0 0 5px 0.1px;
+}
+body>footer{}
+body>footer>div>a>span{visibility:hidden;}
+body>footer>div>a:hover>span{visibility:visible;}
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px){
+
+}
+
+@media only screen and (max-width: 900px){
+    body>.jumbotron{
+        padding: 1rem !important;
+    }
+    body>.jumbotron>p{
+        font-size:small;
+        text-align:justify;
+    }
+    body>.jumbotron>p:last-of-type{
+        width: 100%;
+        clear: both;
+    }
+    body>.jumbotron>a.more{
+        display: block;
+        float: unset;
+    }
+
+    body>main>#photos{
+        padding: 1rem;
+        background: silver;
+        height: 350px;
+    }
+    body>main>section.cards{height:unset;}
+    body>main>section.cards>.card{width:100%;}
+    body>main>section.cards>.card.distribution{float:unset}
+    body>main>section.technique{flex-flow: wrap;}
+    body>main>section.technique>p{width:100%;}
+    body>main>section.motivation{}
+
+}
+
+
+
